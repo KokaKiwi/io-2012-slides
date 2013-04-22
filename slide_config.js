@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
     // Slide settings
     settings: {
-        title: 'An awesome presentation',
-        subtitle: 'Because Powerpoint is too mainstream.',
+        title: 'Sample slides',
+        subtitle: '',
         //eventInfo: {
         //  title: 'Google I/O',
         //  date: '6/x/2013'
@@ -32,4 +32,3 @@ var SLIDE_CONFIG = {
         }
     ]
 };
-
