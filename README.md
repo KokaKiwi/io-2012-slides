@@ -11,7 +11,7 @@ general behavior.
 
 The bottom of the slides include `#io12` by default. If you'd like to change
 this, please update the variable `$social-tags: '#io12';` in
-[`/theme/scss/default.scss`](theme/scss/default.scss).
+[`/theme/less/default.less`](theme/less/default.less).
 
 See the next section on "Editing CSS" before you go editing things.
 
