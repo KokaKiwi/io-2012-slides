@@ -1,5 +1,9 @@
 <h1><img src="images/io2012_logo.png"> HTML5 Slide Template</h1>
 
+## Example
+
+See this URL: [http://kokakiwi.github.io/io-2012-slides](http://kokakiwi.github.io/io-2012-slides)
+
 ## Configuring the slides
 
 Much of the deck is customized by changing the settings in [`slide_config.js`](slide_config.js).
