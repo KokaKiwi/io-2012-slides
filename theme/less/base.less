@@ -1,0 +1,164 @@
+@import "elements";
+@import "config";
+
+.text-shadow(...)
+{
+    -webkit-text-shadow: @arguments;
+    -moz-text-shadow: @arguments;
+    -ms-text-shadow: @arguments;
+    -o-text-shadow: @arguments;
+    text-shadow: @arguments;
+}
+
+.box-shadow(...)
+{
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.box-sizing(...)
+{
+    -webkit-box-sizing: @arguments;
+    -moz-box-sizing: @arguments;
+    -ms-box-sizing: @arguments;
+    -o-box-sizing: @arguments;
+    box-sizing: @arguments;
+}
+
+.box-orient(...)
+{
+    -webkit-box-orient: @arguments;
+    -moz-box-orient: @arguments;
+    -ms-box-orient: @arguments;
+    -o-box-orient: @arguments;
+    box-orient: @arguments;
+}
+
+.box-align(...)
+{
+    -webkit-box-align: @arguments;
+    -moz-box-align: @arguments;
+    -ms-box-align: @arguments;
+    -o-box-align: @arguments;
+    box-align: @arguments;
+}
+
+.box-pack(...)
+{
+    -webkit-box-pack: @arguments;
+    -moz-box-pack: @arguments;
+    -ms-box-pack: @arguments;
+    -o-box-pack: @arguments;
+    box-pack: @arguments;
+}
+
+.font-smoothing(...)
+{
+    -webkit-font-smoothing: @arguments;
+    -moz-font-smoothing: @arguments;
+    -ms-font-smoothing: @arguments;
+    -o-font-smoothing: @arguments;
+    font-smoothing: @arguments;
+}
+
+.transition(...)
+{
+    -webkit-transition: @arguments;
+    -moz-transition: @arguments;
+    -ms-transition: @arguments;
+    -o-transition: @arguments;
+    transition: @arguments;
+}
+
+.transform-style(...)
+{
+    -webkit-transform-style: @arguments;
+    -moz-transform-style: @arguments;
+    -ms-transform-style: @arguments;
+    -o-transform-style: @arguments;
+    transform-style: @arguments;
+}
+
+.transform-origin(...)
+{
+    -webkit-transform-origin: @arguments;
+    -moz-transform-origin: @arguments;
+    -ms-transform-origin: @arguments;
+    -o-transform-origin: @arguments;
+    transform-origin: @arguments;
+}
+
+.background-size(...)
+{
+    -webkit-background-size: @arguments;
+    -moz-background-size: @arguments;
+    -ms-background-size: @arguments;
+    -o-background-size: @arguments;
+    background-size: @arguments;
+}
+
+.reflect(...)
+{
+    -webkit-reflect: @arguments;
+    -moz-reflect: @arguments;
+    -ms-reflect: @arguments;
+    -o-reflect: @arguments;
+    reflect: @arguments;
+}
+
+.flexbox()
+{
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-box !important;
+  display: -o-box !important;
+  display: box !important;
+}
+
+.linear-gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF)
+{
+    background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, @start), color-stop(100%, @stop)) no-repeat;
+    background: -webkit-linear-gradient(@color, @start, @stop) no-repeat;
+    background: -moz-linear-gradient(@color, @start, @stop) no-repeat;
+    background: -o-linear-gradient(@color, @start, @stop) no-repeat;
+    background: linear-gradient(@color, @start, @stop) no-repeat;
+}
+
+.column-count(...)
+{
+    -webkit-column-count: @arguments;
+    -moz-column-count: @arguments;
+    -ms-column-count: @arguments;
+    -o-column-count: @arguments;
+    column-count: @arguments;
+}
+
+.perspective(...)
+{
+    -webkit-perspective: @arguments;
+    -moz-perspective: @arguments;
+    -ms-perspective: @arguments;
+    -o-perspective: @arguments;
+    perspective: @arguments;
+}
+
+.flex-center-center() {
+    .box-orient(vertical);
+    .box-align(center);
+    .box-pack(center);
+}
+
+.flex-left-center() {
+    .box-orient(vertical);
+    .box-align(left);
+    .box-pack(center);
+}
+
+.flex-right-center() {
+    .box-orient(vertical);
+    .box-align(end);
+    .box-pack(center);
+}

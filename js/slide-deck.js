@@ -213,15 +213,19 @@ SlideDeck.prototype.onBodyKeyDown_ = function(e) {
       break;
 
     case 80: // P
-      if (this.controller && this.controller.isPopup) {
-        document.body.classList.toggle('with-notes');
-      } else if (this.controller && !this.controller.popup) {
+      if (this.controller) {
         document.body.classList.toggle('with-notes');
       }
       break;
 
     case 82: // R
       // TODO: implement refresh on main slides when popup is refreshed.
+      break;
+
+    case 84: // T
+      if (this.controller) {
+        this.controller.presentMode();
+      }
       break;
 
     case 27: // ESC: Hide notes and highlighting

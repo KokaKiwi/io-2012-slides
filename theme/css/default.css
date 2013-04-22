@@ -1211,8 +1211,8 @@ article.smaller q:before, article.smaller q:after {
 /* ===== SLIDE CONTENT ===== */
 /* line 839, ../scss/default.scss */
 .logoslide img {
-  width: 383px;
-  height: 92px;
+/*  width: 383px;
+  height: 92px;*/
 }
 
 /* line 845, ../scss/default.scss */

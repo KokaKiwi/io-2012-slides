@@ -46,25 +46,29 @@ SlideController.prototype.setupDone = function() {
 
   var enablePresenterMode = localStorage.getItem('ENABLE_PRESENTOR_MODE');
   if (enablePresenterMode && JSON.parse(enablePresenterMode)) {
-    // Only open popup from main deck. Don't want recursive popup opening!
-    if (!this.isPopup) {
-      var opts = 'menubar=no,location=yes,resizable=yes,scrollbars=no,status=no';
-      this.popup = window.open(location.href, 'mywindow', opts);
-
-      // Loading in the popup? Trigger the hotkey for turning presenter mode on.
-      this.popup.addEventListener('load', function(e) {
-        var evt = this.popup.document.createEvent('Event');
-        evt.initEvent('keydown', true, true);
-        evt.keyCode = 'P'.charCodeAt(0);
-        this.popup.document.dispatchEvent(evt);
-        // this.popup.document.body.classList.add('with-notes');
-        // document.body.classList.add('popup');
-      }.bind(this), false);
-    }
+    this.presentMode();
   }
 
   return true;
 }
+
+SlideController.prototype.presentMode = function() {
+  // Only open popup from main deck. Don't want recursive popup opening!
+  if (!this.isPopup) {
+    var opts = 'menubar=no,location=yes,resizable=yes,scrollbars=no,status=no';
+    this.popup = window.open(location.href, 'mywindow', opts);
+
+    // Loading in the popup? Trigger the hotkey for turning presenter mode on.
+    this.popup.addEventListener('load', function(e) {
+      var evt = this.popup.document.createEvent('Event');
+      evt.initEvent('keydown', true, true);
+      evt.keyCode = 'P'.charCodeAt(0);
+      this.popup.document.dispatchEvent(evt);
+      // this.popup.document.body.classList.add('with-notes');
+      // document.body.classList.add('popup');
+    }.bind(this), false);
+  }
+};
 
 SlideController.prototype.onMessage_ = function(e) {
   var data = e.data;
